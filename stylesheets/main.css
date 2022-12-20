@@ -1,0 +1,105 @@
+/* I chose grey and a dark purple for the main/home page because there isnt as much reading and i like
+the color combonation of a dark grey and darkish purple, And for the terms page i chose a dark grey
+and a lighter purple because there is more reading invlovled while also keeping a nice color combo*/
+
+body {
+  margin: 0;
+}
+#Header-Welcome-page {
+  position: relative;
+  height: 770px;
+}
+
+#heading-over-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.nav-link {
+  margin: 0.1px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 1.3rem;
+
+  background-color: #353535;
+  color: #bbbbbb;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #bbbbbb;
+  color: #353535;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  text-decoration: double;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: double;
+}
+
+p {
+  font-size: 1.7rem;
+  color: black;
+  font-family: Georgia, Arial, Times, serif;
+  margin: 30px 10%;
+  padding: 20px 30px;
+  line-height: 28px;
+}
+
+iframe {
+  margin: 30px 2%;
+  padding: 20px 30px;
+}
+#styled-by-id {
+  font-weight: bold;
+
+  font-size: 34pxs;
+}
+span {
+  text-decoration: underline;
+  font-style: italic;
+}

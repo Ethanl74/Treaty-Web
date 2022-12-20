@@ -1,0 +1,108 @@
+<!--
+Ethan Lowe
+Web Development 20S
+Mr. Hardman
+Pembina Trails Early College
+11/9/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 2</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!-- Line 17-35 helped with by noah, line 59-63 aswell.-->
+    <style>
+      body {
+        background-color: #676b98;
+        color: white;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 45px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+
+      #styled-by-id {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="terms.html">Terms of treaty 2</a></li>
+        <li><a href="#">Placeholder</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="Header-Welcome-page">
+        <!--
+          Image from http://moccasintrailnews.com/index.php/2020/12/08/treaty-2-territory-land-based-learning/ 
+          and its on treaty 2 territory
+        -->
+        <img
+          src="imgs/dauphin.jpg"
+          width="100%"
+          height="775"
+          frameborder="0"
+          alt="This is an image of Dauphin lake during a beautiful sunset with trees in the background, a dock, and some rocks on the side"
+        />
+        <h1 id="heading-over-image">This is Treaty Two</h1>
+      </section>
+
+      <section>
+        <h1>First nations treaty 2</h1>
+
+        <!--
+         The following information on the next paragraph is cited from https://www.rcaanc-cirnac.gc.ca/eng/1100100028664/1581294165927
+      -->
+
+        <p id="styled-by-id">
+          <span style="color: rgb(18, 43, 59)">
+            Treaty 2 was signed on 1871</span
+          >
+          The initial goal of treaty 2 was to open up to settlement and
+          immigration a tract of country bounded and described hereinafter
+          mentioned, and to obtain the consent thereto of her Indian subjects
+          inhabiting the said tract, and to make treaty and arrangements with
+          them, so that there be peace and good will
+        </p>
+
+        <p>Click this to view a video about the treaty</p>
+        <p>
+          <a href="https://youtu.be/ApOFBl7K2eM" target="iframe_a">
+            Treaty 2 territories</a
+          >
+        </p>
+        <!-- this is an iframe that makes a video show up on the screen embed or a normal link. -->
+        <iframe
+          src="https://www.youtube.com/embed/ApOFBl7K2eM"
+          width="50%"
+          height="600px"
+          frameborder="0"
+          title="This is an IFrame that shows a video about the treaties."
+        ></iframe>
+      </section>
+
+      <!--This is an example of an image/img -->
+      <img
+        src="imgs/treaty-2.jpg "
+        width="35%"
+        height="600"
+        alt="its a map of manitoba showing where treaty 2 is located,
+          which is shown right next to treaty 1 in southern manitoba 
+          and a section on the west going into saskachewan "
+        class="centered-image"
+      />
+    </main>
+  </body>
+</html>
