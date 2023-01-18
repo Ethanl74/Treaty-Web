@@ -11,7 +11,7 @@ body {
 }
 #Header-Welcome-page {
   position: relative;
-  height: 770px;
+  height: 650px;
 }
 
 #heading-over-image {
@@ -27,7 +27,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #4b759d;
 }
 
 li {
@@ -63,7 +63,7 @@ nav li {
   padding: 5px;
   font-size: 1.3rem;
 
-  background-color: #353535;
+  background-color: #243164;
   color: #bbbbbb;
 }
 
@@ -77,6 +77,7 @@ h1 {
   text-align: center;
   font-size: 3.2rem;
   text-decoration: double;
+  background-color: rgb(192, 192, 192);
 }
 
 h2 {
@@ -87,7 +88,20 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
+  text-decoration: double;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: double;
+}
+
+h5 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: double;
 }
 
 p {
@@ -96,7 +110,7 @@ p {
   font-family: Georgia, Arial, Times, serif;
   margin: 30px 10%;
   padding: 20px 30px;
-  line-height: 28px;
+  line-height: 140%;
 }
 
 iframe {
@@ -108,77 +122,18 @@ iframe {
 
   font-size: 34pxs;
 }
-span {
-  text-decoration: underline;
-  font-style: italic;
-}
-
-.fade-in-text {
-  font-family: Arial;
-  font-size: 60px;
-  animation: fadeIn 10s;
-  -webkit-animation: fadeIn 10s;
-  -moz-animation: fadeIn 10s;
-  -o-animation: fadeIn 10s;
-  -ms-animation: fadeIn 10s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 h1::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
 
-h2:hover::before {
+h1:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-h2::before {
+h1::before {
   content: " ";
   display: block;
   position: absolute;
@@ -187,29 +142,14 @@ h2::before {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: hsl(200 100% 80%);
+  background: rgb(81, 90, 120);
   z-index: -1;
   transition: transform 0.3s ease;
 }
 
-h2 {
+h1 {
   position: relative;
-  font-size: 5rem;
-}
-
-html {
-  block-size: 100%;
-  inline-size: 100%;
-}
-
-body {
-  min-block-size: 100%;
-  min-inline-size: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  display: grid;
-  place-content: center;
-  font-family: system-ui, sans-serif;
+  font-size: 2rem;
 }
 
 @media (orientation: landscape) {
