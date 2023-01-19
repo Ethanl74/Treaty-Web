@@ -5,9 +5,16 @@ the color combonation of a dark grey and darkish purple, And for the terms page 
 and a lighter purple because there is more reading invlovled while also keeping a nice color combo.
 (Complementary color combination)
 */
+* {
+  line-height: 140%;
+}
+html {
+  font-size: 95.5%;
+}
 
 body {
   margin: 0;
+  font-size: 1.6rem;
 }
 #Header-Welcome-page {
   position: relative;
@@ -66,13 +73,17 @@ nav li {
   background-color: #243164;
   color: #bbbbbb;
 }
-
+nav a,
+nav a:visited {
+  color: #bbbbbb;
+}
 nav a:hover,
 nav a:focus {
   background-color: #bbbbbb;
   color: #353535;
 }
-
+/* the following css code adds elements to all the headers like making them centered, adding font sizes,
+and adding text decorations*/
 h1 {
   text-align: center;
   font-size: 3.2rem;
@@ -105,7 +116,7 @@ h5 {
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: rgb(255, 255, 255);
   font-family: Georgia, Arial, Times, serif;
   margin: 30px 10%;
@@ -113,16 +124,32 @@ p {
   line-height: 140%;
 }
 
+a,
+a:visited {
+  color: rgb(188, 153, 241);
+}
+a:hover,
+a:focus {
+  color: rgb(120, 127, 201);
+}
+footer {
+  padding: 5%;
+}
+
+/* This adds padding and a margin for iframes so they arent on one side of the page and instead
+in the center */
 iframe {
   margin: 30px 2%;
   padding: 20px 30px;
 }
+
 #styled-by-id {
   font-weight: bold;
 
   font-size: 34pxs;
 }
-
+/* The following code adds a blue box to replace the white box behind the H1 on index.html and history.html
+when you hover over it, it changes and when you hover away from it, it goes back to normal*/
 h1::before {
   transform: scaleX(0);
   transform-origin: bottom right;
@@ -156,4 +183,69 @@ h1 {
   body {
     grid-auto-flow: column;
   }
+}
+/* This following code makes it so the paragraph on history.html is able to fade in
+and it makes it able to be used by various web browsers */
+.fade-in-text {
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+.centered-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#history-footer {
+  margin-top: 160%;
 }

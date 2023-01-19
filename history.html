@@ -2,8 +2,8 @@
 Name: Ethan Lowe
 Class:Web Development 
 Teacher: Mr.Hardman 
-School: Ptec 
-Last modified: 1/18/23
+School: PTEC
+Last modified: 1/19/23
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -41,11 +41,14 @@ Last modified: 1/18/23
     </style>
   </head>
   <body>
+    <!-- This following code shows the other webpages which are 
+      connected to this one and makes users able to click on them to see other information 
+      regarding treaty 2-->
     <nav>
       <ul>
         <li><a class="active" href="index.html">Home Page</a></li>
         <li><a href="terms.html">Terms of treaty 2</a></li>
-        <li><a href="third.html">History of Treaty 2</a></li>
+        <li><a href="history.html">History of Treaty 2</a></li>
       </ul>
     </nav>
     <main>
@@ -57,9 +60,16 @@ Last modified: 1/18/23
           frameborder="0"
           alt=""
         />
-
+        <!-- The following code shows an example of a h1 Which is the first thing that the user will read when they 
+        open the webpage and the premise of this header is to give the user a basic understanding
+      on what this webpage will be about so they'll know what they're in for-->
         <h1 id="heading-over-image"><span>History of Treaty 2</span></h1>
+        <!-- This is a div which seperates the content from the other content, for example
+        this perticular div makes the following paragraph able to fade in when the user first opens the webpage-->
         <div class="fade-in-text">
+          <!--The following code is more headers which are bigger than the paragrapghs,
+          there are also paragraphs which go underneath each header which answers each question
+        that the headers display onto the webpage-->
           <p>
             Treaty 2 was first signed during August 1871 at the manitoba house
             fur trading post and has a land area of 92,462.6km².
@@ -93,23 +103,40 @@ Last modified: 1/18/23
           school on each reserve whenever they wanted and they also would have
           enough land for each family to sustain a household of five.
         </p>
-
+        <!-- The following code makes it so you can see an image on the webpage with a width of
+        60%, a height of 600 and it also has a class of "centered-image" which makes sure that
+      the image is in the center of the screen instead of sticking to the right or left.-->
         <img
           src="imgs/reconciliation1.jpg"
           width="60%"
           height="600"
           alt="this shows Chief Bone shaking hands with a woman agreeing to open 
-          relations again between canada and treaty 2 with a treaty 2 poster behind the both of them"
+          relations again between canada and treaty 2 with a treaty 2 poster behind the both of them
+          in a room full of other members of both partys"
           class="centered-image"
         />
-        <h5>Sources</h5>
-        <p>
-          fnt2t.com/index.php/reconciliation-rirsd/,
-          fnt2t.com/index.php/2021/08/10/history-of
-          -manitoba-house-treaty-2-on-august-21-1871,
-          https://blog.hubspot.com/website/css-animation-examples
-        </p>
       </section>
     </main>
+    <footer id="history-footer">
+      <!--This is an h5 tag with a p tag included which show off the sources that were used to
+        complete this project -->
+      <h5>Sources</h5>
+      <a
+        class="links"
+        href="http://fnt2t.com/index.php/reconciliation-rirsd/"
+        target="_blank"
+        >Reconciliation For Treaty 2
+      </a>
+      <br />
+      <a
+        href="http://fnt2t.com/index.php/2021/08/10/history-of
+          -manitoba-house-treaty-2-on-august-21-1871"
+        target="_blank"
+        >History of manitoba house treaty 2
+      </a>
+      <!-- these are my sources that helped me with my code 
+          https://blog.hubspot.com/website/css-animation-examples,
+          https://blog.hubspot.com/website/css-fade-in,-->
+    </footer>
   </body>
 </html>
